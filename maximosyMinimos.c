@@ -10,7 +10,7 @@
             system("cls");
             printf("numero:");
             scanf("%d", &nro);
-            if (flag==0){
+           /* if (flag==0){
                 min=nro;
                 max=nro;
                 flag=1;
@@ -20,6 +20,14 @@
             }
             if (nro<min){
                 min=nro;
+            }*/
+            if (flag==0||nro>max){
+
+                max=nro;
+            }
+            if (flag==0||nro<min){
+                min=nro;
+                flag=1;
             }
             printf("presione esc para salir, cualquier otra tecla para continuar");
             seguir=getch();
