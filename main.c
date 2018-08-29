@@ -1,32 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    int nro1,nro2,nro3,dato;
-    printf("ingrese:");
-    scanf("%d",&nro1);
-    printf("/n ingrese:");
-    scanf("%d",&nro2);
-    printf("/n ingrese:");
-    scanf("%d",&nro3);
 
-    if (nro1>nro2&&nro3)
+int suma (int, int); /*prototipo o declaraciòn*/
+int main ()
     {
-        dato=nro1;
-        printf("el valor mayor es:%d", dato);
-
-    }else if (nro2>nro3&&nro1)
-    {
-        dato=nro2;
-        printf("el valor mayor es:%d",dato);
-
-    }else if(nro3>nro1&&nro2)
-    {
-        dato=nro3;
-        printf("el valor mayor es:%d",dato);
-
+        int nro1, nro2, res;
+        printf("ingrese nro1: ");
+        scanf("%d",&nro1);
+        printf("ingrese nro2: ");
+        scanf("%d",&nro2);
+        res=suma(nro1, nro2);
+        printf("resultado: %d",res);
+        return 0;
     }
 
-    return 0;
-}
+    int suma(int op1, int op2)
+    {
+        int resultado;
+        resultado=op1+op2;
+        return resultado;
+    }
