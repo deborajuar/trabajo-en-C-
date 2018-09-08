@@ -1,31 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 float suma(float op1, float op2)
     {
         float reSuma;
         reSuma=op1+op2;
         return reSuma;
     }
-
-float resta(float op1, float op2)
+ float resta(float op1, float op2)
 {
     float resResta;
     resResta=op1-op2;
     return resResta;
 }
-
-float division (float op1, float op2)
+ float division (float op1, float op2)
 {
     float resDiv;
     if(op1==0)
     {
-
-        printf("\n Dede ingresar un dividendo mayor que 0 para efectuar una division.");
-
-    }
+         printf("\n Dede ingresar un dividendo mayor que 0 para efectuar una division.");
+     }
     resDiv=op1/op2;
     return resDiv;
 }
-
-float multiplicacion(float op1, float op2)
+ float multiplicacion(float op1, float op2)
 {
     float resMulti;
     resMulti=op1*op2;
@@ -40,12 +38,11 @@ float factorial(float op1)
     }
     else
     {
-
-        resFact1=op1*factorial(op1-1);
+         resFact1=op1*factorial(op1-1);
         return resFact1;
     }
-
- float factorial_2(float op2)
+}
+  float factorial_2(float op2)
 {
     float resFact2;
     if(op2==1)
@@ -57,4 +54,5 @@ float factorial(float op1)
         resFact2=op2*factorial(op2-1);
         return resFact2;
     }
+
 }
